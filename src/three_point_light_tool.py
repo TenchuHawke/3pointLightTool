@@ -7,8 +7,8 @@ from ui_utilities import update_fields, toggle_fields
 class LightingSetupWindow(QtWidgets.QWidget):
     def __init__(self):
         super(LightingSetupWindow, self).__init__()
-        uic.loadUi('data/3_point_lighting_tool.ui', self)
-        
+        uic.loadUi('data/three_point_lighting_tool.ui', self)
+
 
     def setupUI(self):
         preset_keys = sorted(presets.keys()) + ["Custom"]
