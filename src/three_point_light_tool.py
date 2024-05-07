@@ -1,5 +1,5 @@
 import sys
-from PyQt5 import QtWidgets, uic
+from PySide2 import QtWidgets, uic
 from presets.lighting_presets import presets
 from light_manager import create_or_use_light
 from ui_utilities import update_fields, toggle_fields
@@ -8,7 +8,7 @@ class LightingSetupWindow(QtWidgets.QWidget):
     def __init__(self):
         super(LightingSetupWindow, self).__init__()
         uic.loadUi('data/3_point_lighting_tool.ui', self)
-        self.setupUI()
+        
 
     def setupUI(self):
         preset_keys = sorted(presets.keys()) + ["Custom"]
